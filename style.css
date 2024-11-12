@@ -1,0 +1,62 @@
+/* Background gradient */
+.stApp {
+    background: linear-gradient(to right, #e0f7fa, #ffe5e5);
+}
+/* Title styling */
+.title {
+    color: #004d40;
+    font-size: 2.8em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+/* Subtitle styling */
+.subtitle {
+    color: #d81b60;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Label styling */
+.stSelectbox label {
+    color: #00695c;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+/* Button styling */
+.stButton button {
+    background-color: #d81b60;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.1em;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.stButton button:hover {
+    background-color: #ad1457;
+    color: #e0f7fa;
+}
+/* Prediction text */
+.prediction-text {
+    color: #004d40;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    background-color: #e0f2f1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+/* Section styling */
+.section-title {
+    color: #00796b;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
