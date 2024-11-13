@@ -3,16 +3,16 @@ import pickle
 import pandas as pd
 
 # Load the saved model, scaler, label encoders, and feature columns
-with open("E:/SEM V/ML CA2/models/random_forest_model.pkl", 'rb') as model_file:
+with open("random_forest_model.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
 
-with open("E:/SEM V/ML CA2/models/scaler.pkl", 'rb') as scaler_file:
+with open("scaler.pkl", 'rb') as scaler_file:
     scaler = pickle.load(scaler_file)
 
-with open("E:/SEM V/ML CA2/models/label_encoders.pkl", 'rb') as encoders_file:
+with open("label_encoders.pkl", 'rb') as encoders_file:
     label_encoders = pickle.load(encoders_file)
 
-with open("E:/SEM V/ML CA2/models/feature_columns.pkl", 'rb') as feature_columns_file:
+with open("feature_columns.pkl", 'rb') as feature_columns_file:
     feature_columns = pickle.load(feature_columns_file)
 
 # Load the external CSS styling file
