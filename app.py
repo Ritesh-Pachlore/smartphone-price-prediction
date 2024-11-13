@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 # Load the saved model, scaler, label encoders, and feature columns
-with open("random_forest_model.pkl", 'rb') as model_file:
+with open("best_model.pkl ", 'rb') as model_file:
     model = pickle.load(model_file)
 
 with open("scaler.pkl", 'rb') as scaler_file:
@@ -65,6 +65,7 @@ if st.button('Predict Price'):
 
     # Predict the price using the trained model
     predicted_price = model.predict(scaled_input)[0]
+    expected_price=predicted_price/6
 
     # Display the predicted price with styling
-    st.markdown(f'<div class="prediction-text">Predicted Price: ₹{predicted_price:.2f}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="prediction-text">Predicted Price: ₹{expected_price:f}</div>', unsafe_allow_html=True)
